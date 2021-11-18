@@ -60,8 +60,7 @@ monedas.forEach(item => {
 
         
   function convertir(valor, divisa1, divisa2) {
-    switch (divisa1) {
-      // Ingreso dolar
+    switch (divisa1) {      
       case monedas[1]:
         if (divisa2 === monedas[1])
           return valor;
@@ -72,9 +71,8 @@ monedas.forEach(item => {
         else if (divisa2 === monedas[4])
           return valor * valordivisas[4];
         else if (divisa2 === monedas[5])
-          return valor * valordivisas[5];
-  
-        // Ingreso Peso Mex
+          return valor * valordivisas[5];  
+        
       case monedas[2]:
         if (divisa2 === monedas[1])
           return valor / valordivisas[2];
@@ -85,9 +83,8 @@ monedas.forEach(item => {
         else if (divisa2 === monedas[4])
           return valor * (valordivisas[4] / valordivisas[2]);
         else if (divisa2 === monedas[5])
-          return valor * (valordivisas[5] / valordivisas[2]);
-  
-        // Ingreso Peso Col
+          return valor * (valordivisas[5] / valordivisas[2]); 
+       
       case monedas[3]:
         if (divisa2 === monedas[1])
           return valor / valordivisas[3];
@@ -98,9 +95,8 @@ monedas.forEach(item => {
         else if (divisa2 === monedas[4])
           return valor * (valordivisas[4] / valordivisas[3]);
         else if (divisa2 === monedas[5])
-          return valor * (valordivisas[5] / valordivisas[3]);
-  
-        // Ingreso Euro
+          return valor * (valordivisas[5] / valordivisas[3]);  
+        
       case monedas[4]:
         if (divisa2 === monedas[1])
           return valor / valordivisas[4];
@@ -111,9 +107,8 @@ monedas.forEach(item => {
         else if (divisa2 === monedas[4])
           return valor;
         else if (divisa2 === monedas[5])
-          return valor * (valordivisas[5] / valordivisas[4]);
-  
-        // Ingreso Libras
+          return valor * (valordivisas[5] / valordivisas[4]);  
+        
       case monedas[5]:
         if (divisa2 === monedas[1])
           return valor / valordivisas[5];
