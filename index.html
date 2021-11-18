@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="/styles.css/styles.css">
+    <title>Conversor de divisas</title>
+</head>
+<body>
+    
+       <div class="container">
+           <form id="form">
+            <div class="casilla_valor">
+                <input type="number" placeholder="Ingresa el valor a convertir" id="valor" required>
+            </div>
+            
+            <div class="seleccion">
+            <div class="selection1">
+                <select name="divisa1" id="divisa1"></select>
+            </div>
+ 
+            <div class="selection2">
+             <select name="divisa2" id="divisa2"></select>
+             </div>
+             
+             <div class="resul">
+                 <input class="resultado" type="text" id="resultado" value="" readonly>
+             </div>
+             <button type="submit" class="button-conver" onclick="convertir()">Convertir</button>
+            </div>             
+            
+           </form>
+        </div>   
+            
+       <!-- scripts -->
+       <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
